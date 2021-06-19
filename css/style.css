@@ -200,6 +200,13 @@ width: 40%;
         font-size: 25px;
     }
 
+    .text-aboutus{
+        text-align: center;
+        padding: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+    }
+
     .form{
         max-width: 800px;
         margin: 10px auto;
@@ -250,7 +257,7 @@ width: 40%;
         .navbar{
             flex-direction: column;
             transition: all 0.3s ease-out;
-            height: 700px;
+            height: 250px;
         }
         .rightnav{
             text-align: center;
