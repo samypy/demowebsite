@@ -30,15 +30,15 @@
         </div>
     </nav>
 
-    <section class="background firstsection">
+    <section class="background firstsection" id="home">
         <div class="box-main">
             <div class="firsthalf">
                 <p class="text-big">Future of online education is here</p>
                 <p class="text-small">Education is the passport to the future, for tomorrow belongs to those who prepare
                     for it today.</p>
                 <div class="button">
-                    <button class="btn">Subcribe</button>
-                  <form><a href="https://www.google.com/"><button class="btn">Watch Video</button></a></form>
+                    <a href="https://www.youtube.com/channel/UCx40IeS9KktpDvsivs4K0XA" target="_blank"><button class="btn">Subcribe</button></a>
+                    <a href="https://www.youtube.com/channel/UCx40IeS9KktpDvsivs4K0XA" target="_blank"><button class="btn">Watch Video</button></a>
                 </div>
             </div>
             <div class="secondhalf">
@@ -48,21 +48,24 @@
 
     </section>
 
-    <section class="section">
+    <section class="section" id="services">
         <div class="paras">
-            <p class="sectiontag text-big">The end of your search</p>
-            <p class="sectionsubtag text-small">Education in India is primarily managed by state-run public education
-                system, which fall under the command of the government at three levels: federal, state and local. Under
-                various articles of the Indian Constitution and the Right of Children to Free and Compulsory Education
-                Act, 2009, free and compulsory education is provided as a fundamental right to children aged 6 to 14.
-                The approximate ratio of public schools to private schools in India is 7:5. Major policy initiatives in
-                Indian education are numerous. Up until 1976, education policies and implementation were determined
-                legally by each of India’s constitutional states. The 42nd amendment to the constitution in 1976 made
-                education a ‘concurrent subject’. From this point on the central and state governments shared formal
-                responsibility for funding and administration of education. In a country as large as India, now with 28
-                states and eight union territories, this means that the potential for variations between states in the
-                policies, plans, programs and initiatives for elementary education is vast. Periodically, national
-                policy frameworks are created to guide states in their creation of state-level programs and policies.
+            <p class="sectiontag text-big">I provide Live, Interactive, Online Tuitions for std. 8/9 of ICSE & SSC board.</p>
+            <p class="sectionsubtag text-small">We provide Group Classes as well as One to One Personalized Tuition with Well Structured & Planned Curriculum.
+                The online coaching is available only for Science and Biology<br>
+                <br>
+                Online Live Interactive Classes:<br>
+                &nbsp;&nbsp;&nbsp;* Audio, Video & Text Interaction<br>
+                &nbsp;&nbsp;&nbsp;* Live Chat during Sessions<br>
+                &nbsp;&nbsp;&nbsp;* Write on Virtual Whiteboard<br>
+                &nbsp;&nbsp;&nbsp;* Recorded Sessions <br>
+                <br>
+                Key Features:<br>
+                &nbsp;&nbsp;&nbsp;- Doubt Clearing Sessions<br>
+                &nbsp;&nbsp;&nbsp;- Chapter Wise Revision<br>
+                &nbsp;&nbsp;&nbsp;- Tests and Assessments<br>
+                &nbsp;&nbsp;&nbsp;- Discussion of Previous Question Papers<br>
+                &nbsp;&nbsp;&nbsp;- Mock Exams<br>
             </p>
         </div>
         <div class="thumbnail">
@@ -83,12 +86,19 @@
             <img src="https://source.unsplash.com/900x900/?science" alt="Laptop Image" class="imgFluid">
         </div>
     </section>
-    <section class="section">
+    <section class="section" id='about'>
         <div class="paras">
-            <p class="sectiontag text-big">The end of your search</p>
-            <p class="sectionsubtag text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                magnam rerum delectus laborum quia tempora eveniet quaerat cum iusto ducimus, tempore nam cumque
-                excepturi minus ratione velit, earum qui dolore!</p>
+            <p class="sectiontag text-big">About Me</p>
+            <p class="sectionsubtag text-small">Compassionate and results-oriented elementary school teacher with more than 10 years of experience managing medium- and large-sized classrooms. </p><br>
+            Experience:<br>
+            &nbsp;&nbsp;&nbsp;- National english High School ICSE, Virar 8 years<br>
+            &nbsp;&nbsp;&nbsp;- Cambridge International, Borivali 2 years<br>
+            <br>
+            Education:<br>
+            &nbsp;&nbsp;&nbsp;- Bachelors in Education (B.Ed) - Mumbai University<br>
+            &nbsp;&nbsp;&nbsp;- Bachelors in Science (BSC - Mumbai University)<br>
+
+
         </div>
         <div class="thumbnail">
             <img src="https://source.unsplash.com/900x900/?coaching" alt="Laptop Image" class="imgFluid">
@@ -96,15 +106,20 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="text-center">Contact Us</h2>
+        <h2 class="text-center">Contact Me</h2>
+        <p class="sectionsubtag text-small text-aboutus">Interested parents or students can reach out to me on: 123456789<br>
+        <br>You can also leave your contact information below and I will get back</p>
+
+        <form method="post" autocomplete="off" name="website-enquiry">
         <div class="form">
-            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
-            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
-            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone" required>
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email" required>
             <textarea class="form-input" name="text" id="text" cols="30" rows="10"
-                placeholder="Elaborate your concerns"></textarea>
-            <button class="btn btn-sm btn-dark">Submit</button>
+                placeholder="Elaborate your requirements" required></textarea>
+            <button type="submit" class="btn btn-sm btn-dark"  name="submit">Submit</button>
         </div>
+    </form>
 
     </section>
 
@@ -115,6 +130,19 @@
 
     </footer>
     <script src="js/resp.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxZmvGbCZuGd7OGbqUy2h8KgpAfBrUSh_oMK-hM6_96RIj_jYGjFuiebyOzLF0m1KTL/exec'
+        const form = document.forms['website-enquiry']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+                fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for contacting us..! We will contact you soon.."))
+                .catch(error => console.error('Error!', error.message))
+                document.querySelector("form").reset();
+        })
+    </script>
+
 </body>
 
 </html>
