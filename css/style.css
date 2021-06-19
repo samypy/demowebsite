@@ -257,7 +257,7 @@ width: 40%;
         .navbar{
             flex-direction: column;
             transition: all 0.3s ease-out;
-            height: 75px;
+            height: 120px;
         }
         .rightnav{
             text-align: center;
