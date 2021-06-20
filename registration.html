@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="css\registration.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="warpper fl">
+        <div class="main">
+            <div class="head">
+                <p>
+                    Student Registration Form</p>
+            </div>
+            <div class="form fl">
+                <form method="POST" autocomplete="off" name="website-registrations">
+                    <p class="name">
+                        First Name * :</p>
+                    <p>
+                        <input type="text" name="first-name" placeholder="First Name" class="name-inp" required>
+                    </p>
+                    <p class="name">
+                        Last Name * :</p>
+                    <p>
+                        <input type="text" name="last-name" placeholder="Last Name" class="name-inp" required>
+                    </P>
+                    <p class="name">
+                        Email * :</p>
+                    <p>
+                        <input type="email" name="email-id" placeholder="Email" class="name-inp" required> 
+                    </p>
+                    <p class="name">
+                        Phone * :</P>
+                    <p>
+                        <input type="text" name="phone" placeholder="Phone" class="name-inp" required>
+                    </p>
+                    <p class="board">
+                        <span class="gen">Board: </span>
+                        <input type="checkbox" name="icse" class="genm" >ICSE
+                        <input type="checkbox" name="ssc" class="genm" >SSC
+                    </p>
+                    <h2 class="name">
+                        Subject</h2>
+                    <select class="option" name="subject">
+                        <option disabled="disabled" selected="selected">--Choose option--</option>
+                        <option>Biology</option>
+                        <option>Science</option>
+                    </select>
+                    <p>
+                        <input type="submit" name="submit" value="SUBMIT" class="sub">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbztMitHTIlw-_DabJJu0YXEi8BNkNRaAujis7Mr-FA6YZ8hnhbtaKtfEGbXk82On44dkA/exec'
+        const form = document.forms['website-registrations']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for contacting us..! We will contact you soon.."))
+                .catch(error => console.error('Error!', error.message))
+            document.querySelector("form").reset();
+        })
+    </script>
+</body>
+
+</html>
