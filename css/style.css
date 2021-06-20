@@ -258,6 +258,10 @@ width: 40%;
         .nav-list{
             flex-direction: column;
         }
+
+     .firstsection{
+        Width: 140vh;
+        }
         .navbar{
             flex-direction: column;
             transition: all 0.3s ease-out;
