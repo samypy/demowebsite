@@ -31,15 +31,14 @@ html{
     justify-content: center;
     position: sticky;
     top: 0;
-    cursor: pointer;
-    
+    cursor: pointer;    
 
 
 }
 
 .nav-list{
     width: 50%;
-    /* background-color: black; */
+    background-color: black;
     display: flex;
     align-items: center;
     
@@ -83,7 +82,7 @@ html{
 
 .firstsection{
 
-    height: 100vh;
+    height: 145vh;
 }
 .box-main{
 display: flex;
@@ -91,7 +90,7 @@ justify-content: center;
 align-items: center;
 color: white;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-max-width: 50%;
+max-width: 75%;
 margin: auto;
 height: 60%;
 
@@ -126,6 +125,11 @@ width: 40%;
     .text-small{
         font-size: 15px;
 
+    }
+
+    .text-flashy{
+        font-size: 30px;
+        color: chocolate;
     }
 
     .btn{
