@@ -130,7 +130,6 @@ width: 40%;
     .text-flashy{
         font-size: 30px;
         color: chocolate;
-        margin: auto;
     }
 
     .btn{
@@ -326,6 +325,7 @@ width: 40%;
         .text-flashy{
             font-size: 22px;
             color: chocolate;
+            margin: auto;
         }
         .logo img {
             width: 100%;
